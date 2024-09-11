@@ -13,7 +13,8 @@
 <body>
     <header id="header">
         <div class="container">
-            <nav>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div> <!-- Ícone de menu para dispositivos móveis -->
+            <nav id="nav-menu" class="nav-hidden">
                 <ul class="menu-left">
                     <li><a href="#about">Sobre</a></li>
                     <li><a href="#experience">Experiência</a></li>
@@ -56,15 +57,11 @@
     <section id="about" data-aos="fade-up">
         <div class="container">
             <h2>Sobre Mim</h2>
-            <p>❤️Apaixonado por tecnologia e empresas, com vivência no setor privado e público, lidando com grandes volumes de dados, sempre estando em contato com diretorias, gerentes, clientes e usuários em geral.
-            </p>    
-                🎓 Sou bacharel em Direito, com especialização em LGPD e Análise de Dados, e atualmente graduando em Arquitetura de Dados.
-                <p>
-                🗣️ Inglês avançado.</p>
-                <p>
-                🥼 Durante a graduação e a especialização, obtive conhecimento e experiências com a implementação da LGPD no Brasil, manejo de planilhas em Excel, manutenção de bases de dados, e uma introdução ao mundo de dados.</p>
-                <p>
-                🎲 Atualmente trabalho como Analista de BI na Transportadora Garbuio, implantando projetos de BI, trabalhando com extração, manipulação e visualização de dados, em que diariamente surgem novos desafios, insights e aprendizados.</p>
+            <p>❤️Apaixonado por tecnologia e empresas, com vivência no setor privado e público, lidando com grandes volumes de dados, sempre estando em contato com diretorias, gerentes, clientes e usuários em geral.</p>    
+            <p>🎓 Sou bacharel em Direito, com especialização em LGPD e Análise de Dados, e atualmente graduando em Arquitetura de Dados.</p>
+            <p>🗣️ Inglês avançado.</p>
+            <p>🥼 Durante a graduação e a especialização, obtive conhecimento e experiências com a implementação da LGPD no Brasil, manejo de planilhas em Excel, manutenção de bases de dados, e uma introdução ao mundo de dados.</p>
+            <p>🎲 Atualmente trabalho como Analista de BI na Transportadora Garbuio, implantando projetos de BI, trabalhando com extração, manipulação e visualização de dados, em que diariamente surgem novos desafios, insights e aprendizados.</p>
         </div>
     </section>
 
@@ -140,15 +137,10 @@
         </div>
     </section>
     
-    
-
-
-
     <section id="projects" data-aos="fade-up">
         <div class="container">
             <h2>Projetos</h2>
 
-            <!-- Projeto 4 - Rastreamento de Veículos -->
             <div class="card">
                 <h3>Rastreamento de Veículos</h3>
                 <a href="https://rastreamento-veiculos-luis.streamlit.app" class="btn" target="_blank">Ver Projeto</a>
@@ -168,8 +160,7 @@
                 <h3>Monitoramento Climático</h3>
                 <a href="https://monitoraclimaapp.streamlit.app" class="btn" target="_blank">Ver Projeto</a>
             </div>
-              
-            <!-- Projeto 1 - Dashboard de Vendas (Power BI) -->
+
             <div class="card">
                 <h3>Dashboard de Vendas (Power BI)</h3>
                 <a href="https://app.powerbi.com/view?r=eyJrIjoiYzQ5YTgzYWMtYjJkZi00N2U3LWIwNTYtNGYwOWI4NzIxYWY1IiwidCI6ImNjMmE5NWVhLTMzNWMtNDQzYi04NDQzLWU5YWQzM2ZmOWUwNCJ9" class="btn" target="_blank">Ver Projeto</a>
@@ -178,7 +169,6 @@
         </div>
     </section>
     
-
     <section id="education" data-aos="fade-up">
         <div class="container">
             <h2>Formação Acadêmica</h2>
@@ -215,57 +205,65 @@
         </div>
     </section>
     
+    <!-- Seção de Formulário de Contato -->
+    <section id="contato">
+        <form action="#" method="POST">
+            <h2>Fale Comigo</h2>
+            <p>Resta alguma dúvida? Preencha os campos abaixo com os seguintes dados que em breve entraremos em contato.</p>
+            
+            <div class="form-group">
+                <label for="nome">Seu Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite aqui" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="email@exemplo.com.br" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="assunto">Assunto</label>
+                <input type="text" id="assunto" name="assunto" placeholder="Digite aqui" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva aqui sua mensagem" required></textarea>
+            </div>
+            
+            <button type="submit">Enviar contato</button>
+        </form>
+    </section>
 
-<!-- Seção de Formulário de Contato -->
-<section id="contato">
-    <form action="#" method="POST">
-        <h2>Fale Comigo</h2>
-        <p>Resta alguma dúvida? Preencha os campos abaixo com os seguintes dados que em breve entraremos em contato.</p>
-        
-        <div class="form-group">
-            <label for="nome">Seu Nome</label>
-            <input type="text" id="nome" name="nome" placeholder="Digite aqui" required>
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <h3>Contato</h3>
+            <p>Email: <a href="mailto:barroslucash@gmail.com">barroslucash@gmail.com</a></p>
+            <p>Telefone: (19) 99263-0596</p>
+            <p><a href="https://www.linkedin.com/in/lucas-h-barros/" target="_blank">LinkedIn</a></p>
         </div>
-        
-        <div class="form-group">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" placeholder="email@exemplo.com.br" required>
-        </div>
-        
-        <div class="form-group">
-            <label for="telefone">Telefone</label>
-            <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
-        </div>
-        
-        <div class="form-group">
-            <label for="assunto">Assunto</label>
-            <input type="text" id="assunto" name="assunto" placeholder="Digite aqui" required>
-        </div>
-        
-        <div class="form-group">
-            <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva aqui sua mensagem" required></textarea>
-        </div>
-        
-        <button type="submit">Enviar contato</button>
-    </form>
-</section>
-
-
-<!-- Mover a Seção de Contato para o rodapé -->
-<footer>
-    <div class="container">
-        <h3>Contato</h3>
-        <p>Email: <a href="mailto:barroslucash@gmail.com">barroslucash@gmail.com</a></p>
-        <p>Telefone: (19) 99263-0596</p>
-        <p><a href="https://www.linkedin.com/in/lucas-h-barros/" target="_blank">LinkedIn</a></p>
-    </div>
-</footer>
-
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        // Função para alternar o menu de navegação em dispositivos móveis
+        function toggleMenu() {
+            var menu = document.getElementById('nav-menu');
+            if (menu.classList.contains('nav-hidden')) {
+                menu.classList.remove('nav-hidden');
+            } else {
+                menu.classList.add('nav-hidden');
+            }
+        }
     </script>
 </body>
 </html>
