@@ -21,6 +21,68 @@ header {
     z-index: 9999;
 }
 
+#about-professional {
+    background-color: #f5f5f5; /* Cor neutra para profissionalismo */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about-professional-section .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-content {
+    margin-bottom: 30px;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.quote {
+    font-size: 20px;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.author {
+    font-size: 18px;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+.current-occupation h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.current-occupation p {
+    font-size: 18px;
+    color: #555;
+}
+
+.about-details h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.about-details p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+
 .menu-icon {
     display: none;
     font-size: 2rem;
