@@ -119,7 +119,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     font-family: 'Dosis', sans-serif;
     font-size: 1.2em;
     letter-spacing: 1px;
@@ -193,7 +193,7 @@ h2 {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: url('gurz6.jpg') no-repeat center center;
+    background: url('Untitled.png') no-repeat center center;
     background-size: cover;
     text-align: center;
     z-index: 1;
